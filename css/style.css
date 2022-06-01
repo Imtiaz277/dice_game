@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #393E46;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container .title{
+    font-family: 'Lobster', cursive;
+    font-size: 12.8rem;
+    color: #4ECCA3;
+    text-shadow: 0.2rem 0.2rem 0.4rem #000;
+}
+
+.container .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .col{
+    text-align: center;
+    padding: 1rem;
+}
+
+.col .player{
+    font-family: 'Indie Flower', cursive;
+    font-size: 3.2rem;
+    color: #4ECCA3;
+}
+
+.col .dice-img{
+    display: inline-block;
+}
+
+.container .footer{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+@media(max-width: 748px){
+    .container .title{
+        font-size: 9rem;
+    }
+
+    .col .player{
+        font-size: 3rem;
+    }
+    
+    .col .dice-img{
+        width: 70%;
+    }
+
+}
+
+@media(max-width: 527px){
+    .container .title{
+        font-size: 8rem;
+    }
+}
+
+@media(max-width: 499px){
+    .container .title{
+        font-size: 5rem;
+    }
+
+    .col .player{
+        font-size: 3rem;
+    }
+    
+    .col .dice-img{
+        width: 45%;
+    }
+}
